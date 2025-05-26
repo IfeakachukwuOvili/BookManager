@@ -36,9 +36,6 @@ A clean, elegant book management system with a dark academia aesthetic, inspired
 
 ---
 
-
----
-
 ##  Installation
 
 ### Prerequisites
