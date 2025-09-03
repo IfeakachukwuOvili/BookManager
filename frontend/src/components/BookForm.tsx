@@ -3,7 +3,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
 const backendApi = axios.create({
-  baseURL: "http://localhost:3001", // Your backend URL
+  baseURL: import.meta.env.VITE_BACKEND_URL || "http://localhost:3001",
 });
 
 const openLibraryApi = axios.create({

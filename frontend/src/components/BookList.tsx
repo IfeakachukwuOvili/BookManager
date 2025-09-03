@@ -4,7 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { FaTrash } from "react-icons/fa"; // Import trash icon from Font Awesome icons
 
 const api = axios.create({
-  baseURL: "http://localhost:3001", // your backend URL
+  baseURL: import.meta.env.VITE_BACKEND_URL || "http://localhost:3001",
 });
 
 type Book = {
